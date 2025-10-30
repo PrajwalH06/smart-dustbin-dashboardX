@@ -1,0 +1,14 @@
+/* ===== ALERTS ===== */
+.alerts {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.alert {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

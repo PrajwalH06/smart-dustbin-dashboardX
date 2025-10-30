@@ -1,0 +1,49 @@
+/* Fire Animation Styles */
+.fire-animate .flame-main,
+.fire-animate .flame-left,
+.fire-animate .flame-right {
+  animation: flameFlicker 1s infinite alternate;
+}
+
+@keyframes flameFlicker {
+  0% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scaleY(1.1) scaleX(0.95);
+    opacity: 0.95;
+  }
+  60% {
+    transform: scaleY(0.95) scaleX(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scaleY(1.05) scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Illustration and Message Styling */
+.safe-bg-illustration,
+.safe-bg-illustration-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 0;
+  opacity: 0.85;
+}
+.safe-bg-illustration-top {
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+.safe-bg-illustration-top svg {
+  margin-bottom: 8px;
+}
+.safe-message {
+  font-size: 1rem;
+  color: #4caf50;
+  text-align: center;
+  font-weight: 500;
+}

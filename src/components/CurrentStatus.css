@@ -1,0 +1,88 @@
+.current-status-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.status-item:last-child {
+  border-bottom: none;
+}
+
+.status-label {
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Gap between icon and text */
+}
+
+.status-icon {
+  font-size: 1.1rem;
+  width: 20px; /* Align icons */
+  text-align: center;
+}
+
+.status-value {
+  font-weight: 600;
+}
+
+.status-normal {
+  color: #333;
+}
+
+.status-enabled {
+  color: #2e7d32; /* Green */
+}
+
+.status-warning {
+  color: #f57c00; /* Orange/Yellow for Low Power */
+}
+
+.status-disabled {
+  color: #c62828; /* Red */
+}
+
+/* Dark Mode */
+body.dark-mode .current-status-container {
+  color: #ecf0f1;
+}
+
+body.dark-mode .status-item {
+  border-bottom-color: #34495e;
+}
+
+body.dark-mode .status-label {
+  color: #bdc3c7;
+}
+
+body.dark-mode .status-normal {
+  color: #ecf0f1;
+}
+
+body.dark-mode .status-enabled {
+  color: #4caf50; /* Brighter Green */
+}
+
+body.dark-mode .status-warning {
+  color: #ff9800; /* Brighter Orange/Yellow */
+}
+
+body.dark-mode .status-disabled {
+  color: #f44336; /* Brighter Red */
+}
