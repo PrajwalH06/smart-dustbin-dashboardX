@@ -240,6 +240,7 @@ function App() {
 
   const getEstimatedTime = () => {
     if (currentData.fill_level >= 100) return "Full - Empty Now!";
+    if (currentData.fill_level >= 95) return "Almost Full!";
     if (currentData.fill_level >= 85) return "~2-4 hours";
     if (currentData.fill_level >= 60) return "~8-12 hours";
     if (currentData.fill_level >= 30) return "~1-2 days";
